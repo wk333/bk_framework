@@ -21,6 +21,7 @@
 			    var static_url = "${STATIC_URL}"; // 静态资源前缀
 	      </script>
     </%block>
+    <%block name='head2'></%block>
   </head>
 
   <body>
@@ -35,7 +36,7 @@
             <div class="collapse navbar-collapse navbar-responsive-collapse">
                 <ul class="nav navbar-nav">
                   <%
-                    home = dev_guide = contactus = ''
+                    home = dev_guide = contactus = iwork = ''
                     relative_path = APP_PATH
                     if relative_path == SITE_URL or relative_path.startswith(SITE_URL + "?"):
                       home = 'king-navbar-active'
@@ -43,12 +44,14 @@
                       dev_guide = 'king-navbar-active'
                     elif relative_path.startswith(SITE_URL + "contactus/"):
                       contactus = 'king-navbar-active'
+                    elif relative_path.startswith(SITE_URL + "iwork/"):
+                      iwork = 'king-navbar-active'
                 
                   %>
                   <li class="${home}"><a href="${SITE_URL}"><span>首页</span></a></li>
                   <li class="${dev_guide}"><a href="${SITE_URL}dev-guide/"><span>开发指引</span></a></li>
                   <li class="${contactus}"><a href="${SITE_URL}contactus/"><span>联系我们</span></a></li>
-                  
+                  <li class="${iwork}"><a href="${SITE_URL}iwork/"><span>会议管理系统</span></a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                   <a href="###" class="avatar">
