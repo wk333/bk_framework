@@ -22,7 +22,7 @@ DATABASES = {
         'NAME': 'classdbpro',                        # 数据库名 (默认与APP_ID相同)
         'USER': 'classdbpro',                            # 你的数据库user
         'PASSWORD': 'classdbpro@2018',                        # 你的数据库password
-        'HOST': '10.1.1.16',                   		   # 数据库HOST
+        'HOST': '172.22.1.6',                   		   # 数据库HOST
         'PORT': '3306',                        # 默认3306
     },
 }
