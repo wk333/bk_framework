@@ -21,7 +21,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',  # 默认用mysql
         'NAME': 'classdb',                        # 数据库名 (默认与APP_ID相同)
         'USER': 'classdb',                            # 你的数据库user
-        'PASSWORD': 'classdb',                        # 你的数据库password
+        'PASSWORD': 'classdb@2018',                        # 你的数据库password
         'HOST': '172.22.1.10',                   		   # 数据库HOST
         'PORT': '3306',                        # 默认3306
     },
